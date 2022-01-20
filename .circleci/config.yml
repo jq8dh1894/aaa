@@ -9,9 +9,9 @@ jobs:
       # replace with your preferred image
       - image: cimg/base:stable
     steps:
-      - docker/install-docker-compose:
-          install-dir: /abc 
-          version: latest 
+      - docker/build:
+          dockerfile: Dockerfile 
+          image: ubuntu:18.04 
 
 workflows:
   example-workflow:
